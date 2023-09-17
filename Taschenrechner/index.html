@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Hier werden Metadaten und die Verbindung zu Google Fonts definiert -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" Content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <!-- Hier beginnt der JavaScript-Code -->
+    <script>
+    // Diese Funktion fügt eine Operation zum Ausdruck hinzu
+    function appendOperation(operation) {
+        document.getElementById('resultArea').innerHTML += operation;
+    }
+
+    // Diese Funktion berechnet das Ergebnis
+    function calculateResult() {
+        let container = document.getElementById('resultArea');
+        let expression = container.innerHTML;
+
+        // Ersetze "x" durch "*" und ":" durch "/" für die Berechnung
+        expression = expression.replace(/⋅/g, '*').replace(/:/g, '/');
+
+        // Ersetze "%" durch "/100" für die Prozentberechnung
+        expression = expression.replace(/%/g, '/100');
+
+        try {
+            let result;
+
+            // Überprüfe, ob die Wurzel vorhanden ist
+            if (expression.includes('√')) {
+                const number = parseFloat(expression.slice(expression.indexOf('√') + 1));
+                if (!isNaN(number)) {
+                    result = Math.sqrt(number);
+                } else {
+                    result = 'Error';
+                }
+            } else {
+                // Führe die Berechnung durch
+                result = eval(expression);
+            }
+
+            container.innerHTML = result;
+        } catch (error) {
+            container.innerHTML = 'Error';
+        }
+    }
+
+    // Diese Funktion löscht das letzte Zeichen
+    function deleteLast() {
+        let container = document.getElementById('resultArea');
+        if (container.innerHTML.endsWith(' ')) {
+            container.innerHTML = container.innerHTML.slice(0, -3);
+        } else {
+            container.innerHTML = container.innerHTML.slice(0, -1);
+        }
+    }
+
+    // Diese Funktion löscht alles
+    function deleteAll() {
+        let container = document.getElementById('resultArea');
+        if (container.innerHTML.endsWith(' ')) {
+            container.innerHTML = container.innerHTML.slice(0, -300);
+        } else {
+            container.innerHTML = container.innerHTML.slice(0, -100);
+        }
+    }
+    </script>
+    <!-- Hier endet der JavaScript-Code -->
+</head>
+<body>
+    <!-- Hier wird der Bereich für das Ergebnis definiert -->
+    <div id="resultArea"></div>
+
+    <!-- Hier wird die Tabelle für die Schaltflächen des Rechners erstellt -->
+    <table>
+        <tr>
+            <td onclick="appendOperation('√')" class="highlight">√</td>
+            <td onclick="appendOperation('%')" class="highlight">%</td>
+            <td onclick="deleteAll()" class="delete">AC</td>
+            <td onclick="deleteLast()" class="delete">DEL</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendOperation(7)">7</td>
+            <td onclick="appendOperation(8)">8</td>
+            <td onclick="appendOperation(9)">9</td>
+            <td onclick="appendOperation(':')" class="highlight">:</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendOperation(4)">4</td>
+            <td onclick="appendOperation(5)">5</td>
+            <td onclick="appendOperation(6)">6</td>
+            <td onclick="appendOperation('⋅')" class="highlight">⋅</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendOperation(1)">1</td>
+            <td onclick="appendOperation(2)">2</td>
+            <td onclick="appendOperation(3)">3</td>
+            <td onclick="appendOperation('+')" class="highlight">+</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendOperation(0)">0</td>
+            <td onclick="appendOperation(',')" class="highlight">,</td>
+            <td onclick="calculateResult()" id="result">=</td>
+            <td onclick="appendOperation('-')" class="highlight">-</td>
+        </tr>
+    </table>
+</body>
+</html>
