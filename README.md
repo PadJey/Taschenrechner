@@ -8,7 +8,7 @@
 🔗 Live preview: https://taschenrechner100.netlify.app/ 😊
 
 
-# Features
+# Funktionen / Features
 
 - Num Pad
 - "AC" & "DEL"
@@ -21,7 +21,8 @@
 - HTML, CSS % JS in UwW
 - Supported Updates for <50 years
 
-# What I learned
+
+# What I learned / Was ich lernte
 
 - p>
 - Visuell Studio Umgang
@@ -36,4 +37,5 @@
 
 
 # Contributing
+
 - Powered by OpenAI and Junus E.
