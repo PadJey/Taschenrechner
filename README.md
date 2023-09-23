@@ -23,13 +23,17 @@
 
 # What I learned
 
+- p>
 - Visuell Studio Umgang
 - Use CSS grid and flex to create layout
 - Mathematik (optimierte und wiederverwendbare Funktionen)
-- p
+- p/>
+- p>
 - Visual Studio Handling
 - Use CSS grid and flex to create layout
 - Mathematics (optimised and reusable functions)
-- p
+- p/>
+
+
 # Contributing
 - Powered by OpenAI and Junus E.
