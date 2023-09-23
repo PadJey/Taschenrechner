@@ -26,10 +26,10 @@
 - Visuell Studio Umgang
 - Use CSS grid and flex to create layout
 - Mathematik (optimierte und wiederverwendbare Funktionen)
-<p class undefined error>
+<p>
 - Visual Studio Handling
 - Use CSS grid and flex to create layout
 - Mathematics (optimised and reusable functions)
-
+</p>
 # Contributing
 - Powered by OpenAI and Junus E.
