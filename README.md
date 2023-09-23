@@ -24,16 +24,16 @@
 
 # Was ich lernte / What I learned 
 
-- <p>
+- p>
 - Visuell Studio Umgang
 - CSS-Raster und Flex zum Erstellen von Layouts verwenden
 - Mathematik (optimierte und wiederverwendbare Funktionen)
-- <p/>
-- <p>
+- p/>
+- p>
 - Visual Studio Handling
 - Use CSS grid and flex to create layout
 - Mathematics (optimised and reusable functions)
-- <p/>
+- p/>
 
 
 # Beitragende / Contributing
