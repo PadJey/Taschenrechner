@@ -22,7 +22,7 @@
 - Supported Updates for <50 years
 
 
-# What I learned / Was ich lernte
+# Was ich lernte / What I learned 
 
 - p>
 - Visuell Studio Umgang
