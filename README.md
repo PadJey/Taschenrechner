@@ -36,6 +36,6 @@
 - p/>
 
 
-# Contributing
+# Beteiligte / Contributing
 
 - Powered by OpenAI and Junus E.
