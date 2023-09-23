@@ -26,7 +26,7 @@
 - Visuell Studio Umgang
 - Use CSS grid and flex to create layout
 - Mathematik (optimierte und wiederverwendbare Funktionen)
-<a>
+<p>
 - Visual Studio Handling
 - Use CSS grid and flex to create layout
 - Mathematics (optimised and reusable functions)
