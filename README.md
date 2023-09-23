@@ -8,7 +8,7 @@
 🔗 Live preview: https://taschenrechner100.netlify.app/ 😊
 
 
-#Features
+# Features
 
 - Num Pad
 - "AC" & "DEL"
