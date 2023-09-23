@@ -18,7 +18,7 @@
 - "·" Multiplikation
 - ":" Division
 - "=" Summe
-- HTML, CSS % JS in UwW
+- HTML, CSS % JS in UwU
 - Supported Updates for <50 years
 
 
