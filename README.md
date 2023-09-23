@@ -26,7 +26,7 @@
 
 - p>
 - Visuell Studio Umgang
-- Use CSS grid and flex to create layout
+- CSS-Raster und Flex zum Erstellen von Layouts verwenden
 - Mathematik (optimierte und wiederverwendbare Funktionen)
 - p/>
 - p>
